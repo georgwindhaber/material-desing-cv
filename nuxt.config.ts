@@ -11,7 +11,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["@nuxt/image", "radix-vue/nuxt"],
+  modules: ["@nuxt/image", "radix-vue/nuxt", "@nuxt/icon"],
   imports: {
     autoImport: true,
   },
