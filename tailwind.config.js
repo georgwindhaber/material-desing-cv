@@ -8,7 +8,7 @@ export default {
     "./app.vue",
     "./error.vue",
   ],
-  safelist: ["h-full", "w-full"],
+  safelist: ["h-full", "w-full", "bg-surface"],
   theme: {
     colors: {
       primary: "rgb(var(--md-sys-color-primary))",
