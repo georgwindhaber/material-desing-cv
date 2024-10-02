@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const { variant } = withDefaults(
+const props = withDefaults(
   defineProps<{
     variant?: "filled" | "outlined" | "text" | "elevated" | "tonal";
   }>(),
@@ -14,23 +14,25 @@ const { variant } = withDefaults(
     :class="[
       'px-5 py-2 rounded-full relative',
       {
-        'bg-primary text-onPrimary ': variant === 'filled',
+        'bg-primary text-onPrimary ': props.variant === 'filled',
       },
       {
         'outline outline-1 outline-outline text-primary hover:bg-primary/8 active:bg-primary/12':
-          variant === 'outlined',
+          props.variant === 'outlined',
       },
       {
-        'text-primary ': variant === 'text',
+        'text-primary ': props.variant === 'text',
       },
       {
-        'bg-surfaceContainerLow text-primary shadow-md hover:bg-primary/8 active:bg-primary/12': variant === 'elevated',
+        'bg-surfaceContainerLow text-primary shadow-md hover:bg-primary/8 active:bg-primary/12':
+          props.variant === 'elevated',
       },
       {
-        'bg-secondaryContainer text-onSecondaryContainer': variant === 'tonal',
+        'bg-secondaryContainer text-onSecondaryContainer': props.variant === 'tonal',
       },
     ]"
   >
+    <span class="material-symbols-outlined"> search </span>
     <slot />
     <!-- State overlay -->
     <div
@@ -38,13 +40,13 @@ const { variant } = withDefaults(
         'absolute inset-0 rounded-full',
         {
           'hover:bg-primary/8 active:bg-primary/12':
-            variant === 'outlined' || variant === 'text' || variant === 'elevated',
+            props.variant === 'outlined' || props.variant === 'text' || props.variant === 'elevated',
         },
         {
-          'hover:bg-onPrimary/8 active:bg-onPrimary/12': variant === 'filled',
+          'hover:bg-onPrimary/8 active:bg-onPrimary/12': props.variant === 'filled',
         },
         {
-          'hover:bg-onSecondaryContainer/8 active:bg-onSecondaryContainer/12': variant === 'tonal',
+          'hover:bg-onSecondaryContainer/8 active:bg-onSecondaryContainer/12': props.variant === 'tonal',
         },
       ]"
     />
