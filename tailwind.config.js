@@ -62,6 +62,7 @@ export default {
       surfaceContainer: "rgb(var(--md-sys-color-surface-container))",
       surfaceContainerHigh: "rgb(var(--md-sys-color-surface-container-high))",
       surfaceContainerHighest: "rgb(var(--md-sys-color-surface-container-highest))",
+      transparent: "transparent",
     },
 
     extend: {

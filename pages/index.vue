@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const checkbox = ref<boolean | undefined>(undefined);
+const textfield = ref("");
 </script>
 
 <template>
@@ -24,6 +25,18 @@ const checkbox = ref<boolean | undefined>(undefined);
       <h2 class="text-xl font-bold w-full">Checkbox</h2>
       <dina-checkbox :value="checkbox" @change="checkbox = !checkbox" />
       <dina-checkbox :value="checkbox" @change="checkbox = !checkbox" disabled />
+    </div>
+    <div class="bg-surfaceContainerLowest rounded-lg p-3 flex flex-wrap gap-3">
+      <h2 class="text-xl font-bold w-full">Textfield</h2>
+      <dina-textfield
+        label="Label"
+        :value="textfield"
+        @input="
+          (e) => {
+            textfield = e.target.value;
+          }
+        "
+      />
     </div>
   </main>
 </template>
