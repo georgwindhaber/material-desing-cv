@@ -15,6 +15,9 @@ export default defineNuxtConfig({
   imports: {
     autoImport: true,
   },
+  radix: {
+    prefix: "radix",
+  },
   app: {
     head: {
       bodyAttrs: {
