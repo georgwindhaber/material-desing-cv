@@ -30,6 +30,8 @@ const textfield = ref("");
       <h2 class="text-xl font-bold w-full">Textfield</h2>
       <dina-textfield
         label="Label"
+        leading-icon="search-rounded"
+        supporting-text="Supporting text"
         :value="textfield"
         @input="
           (e) => {
@@ -40,6 +42,7 @@ const textfield = ref("");
       <dina-textfield
         label="Label"
         placeholder="Placeholder"
+        leading-icon="format-color-text-rounded"
         :value="textfield"
         @input="
           (e) => {
@@ -50,6 +53,8 @@ const textfield = ref("");
       <dina-textfield
         label="Disabled"
         placeholder="Placeholder"
+        leading-icon="disabled-by-default-rounded"
+        supporting-text="Supporting text disabled"
         disabled
         :value="textfield"
         @input="

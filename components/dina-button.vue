@@ -41,7 +41,7 @@ const props = withDefaults(
     ]"
     :disabled="props.disabled"
   >
-    <Icon v-if="icon" :name="`material-symbols:${icon}`" />
+    <dina-icon v-if="icon" :name="icon" />
     <slot />
     <!-- State overlay -->
     <div
