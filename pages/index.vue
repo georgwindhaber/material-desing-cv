@@ -47,6 +47,17 @@ const textfield = ref("");
           }
         "
       />
+      <dina-textfield
+        label="Disabled"
+        placeholder="Placeholder"
+        disabled
+        :value="textfield"
+        @input="
+          (e) => {
+            textfield = e.target.value;
+          }
+        "
+      />
     </div>
   </main>
 </template>
