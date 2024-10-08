@@ -37,6 +37,16 @@ const textfield = ref("");
           }
         "
       />
+      <dina-textfield
+        label="Label"
+        placeholder="Placeholder"
+        :value="textfield"
+        @input="
+          (e) => {
+            textfield = e.target.value;
+          }
+        "
+      />
     </div>
   </main>
 </template>
