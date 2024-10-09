@@ -1,5 +1,3 @@
-import Aura from "@primevue/themes/aura";
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
@@ -11,17 +9,14 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["@nuxt/image", "radix-vue/nuxt", "@nuxt/icon"],
+  modules: ["@nuxt/image", "@nuxt/icon"],
   imports: {
     autoImport: true,
-  },
-  radix: {
-    prefix: "radix",
   },
   app: {
     head: {
       bodyAttrs: {
-        class: "light bg-surface w-full h-full",
+        class: "dark bg-surface w-full h-full",
       },
       htmlAttrs: {
         class: "w-full h-full",
