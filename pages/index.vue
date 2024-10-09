@@ -11,8 +11,8 @@ useHead({
 </script>
 
 <template>
-  <div class="text-onSurface flex flex-row-reverse justify-center py-5">
-    <main class="flex flex-col gap-5 p-5 max-w-prose">
+  <div class="text-onSurface flex flex-col-reverse md:flex-row-reverse justify-center py-5 gap-5">
+    <main class="flex flex-col gap-5 max-w-prose px-3 md:px-0">
       <cv-entry
         title="DINA Elektronik - Senior Frontend Developer"
         date="August 2024 - now"
@@ -107,7 +107,7 @@ useHead({
         </template>
       </cv-entry>
     </main>
-    <aside class="flex flex-col gap-5 max-w-[24ch] text-right">
+    <aside class="flex flex-col gap-5 max-w-prose md:max-w-[24ch] md:text-right px-3 md:px-0">
       <nuxt-img src="/profile-picture.jpg" alt="Profile Picture" class="rounded-lg" width="24ch" height="24ch" />
       <h1 class="text-3xl text-primary italic font-bold p-3">Georg Windhaber</h1>
       <section class="bg-surfaceContainerLowest p-3">Friedrichshain-Kreuzberg, Berlin, Germany</section>
