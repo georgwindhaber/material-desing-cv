@@ -110,7 +110,10 @@ useHead({
     <aside class="flex flex-col gap-5 max-w-prose md:max-w-[24ch] md:text-right px-3 md:px-0">
       <nuxt-img src="/profile-picture.jpg" alt="Profile Picture" class="rounded-lg" width="24ch" height="24ch" />
       <h1 class="text-3xl text-primary italic font-bold p-3">Georg Windhaber</h1>
-      <section class="bg-surfaceContainerLowest p-3">Friedrichshain-Kreuzberg, Berlin, Germany</section>
+      <section class="bg-surfaceContainerLowest p-3">
+        <h3 class="font-bold text-primary">Location</h3>
+        Friedrichshain-Kreuzberg, Berlin, Germany
+      </section>
       <section class="bg-surfaceContainerLowest p-3">
         <h2 class="uppercase text-xl font-bold text-primary">Education</h2>
         <p class="text-primary my-5">
